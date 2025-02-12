@@ -22,21 +22,21 @@ Tools yang Digunakan
  Fitur Utama
 
 Autentikasi User
-- **Register & Login** menggunakan Laravel Sanctum.
-- **Proteksi API dengan Bearer Token** untuk keamanan data.
-- **Tombol Logout** untuk keluar dari sesi.
+- Register & Login** menggunakan Laravel Sanctum.
+- Proteksi API dengan Bearer Token** untuk keamanan data.
+- Tombol Logout** untuk keluar dari sesi.
 
 Manajemen Diary
-- **Menambah** diary dengan input teks & gambar.
-- **Melihat daftar diary** yang sudah dibuat.
-- **Mengedit diary** dengan update teks & mengganti gambar.
-- **Menghapus diary** dengan modal konfirmasi.
+- Menambah diary dengan input teks & gambar.
+- Melihat daftar diary yang sudah dibuat.
+- Mengedit diary dengan update teks & mengganti gambar.
+- Menghapus diary dengan modal konfirmasi.
 
 Pencarian Kode Pos
-- **Menampilkan kode pos & alamat** dengan API ZipCloud.
-- **Fitur Auto Fill** untuk mencari alamat berdasarkan kode pos.
-- **Tombol Edit** untuk mengubah kode pos & alamat.
-- **Tombol Save** untuk menyimpan perubahan.
+- Menampilkan kode pos & alamat dengan API ZipCloud.
+- Fitur Auto Fill untuk mencari alamat berdasarkan kode pos.
+- Tombol Edit untuk mengubah kode pos & alamat.
+- Tombol Save untuk menyimpan perubahan.
 
 
 
@@ -44,7 +44,7 @@ Cara Install & Menjalankan Proyek
 Clone Repository**
 bash
 - git clone https://github.com/ipoelamri/diary-app-saiful
-- cd diary-app
+- cd diary-app-saiful
 
 Setup Backend (Laravel)
 
