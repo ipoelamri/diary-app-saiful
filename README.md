@@ -43,12 +43,12 @@ Pencarian Kode Pos
 Cara Install & Menjalankan Proyek
 Clone Repository**
 bash
-- -git clone https://github.com/ipoelamri/diary-app-saiful
+- git clone https://github.com/ipoelamri/diary-app-saiful
 - cd diary-app
 
 Setup Backend (Laravel)
 
--Masuk ke folder Backend (diary)
+- Masuk ke folder Backend (diary)
 
 Install dependencies
 - -composer install
