@@ -17,6 +17,9 @@ Tools yang Digunakan
 - Axios (HTTP Request)
 - React Router (Navigasi)
 
+ Gunakan Laragon atau Xampp atau tools semacamnya untuk menjalankan web server dan database server.
+ Disini saya menggunakan Laragon dengan server Nginx
+
 ---
 
  Fitur Utama
