@@ -22,61 +22,63 @@ Tools yang Digunakan
  Fitur Utama
 
 Autentikasi User
-- **Register & Login** menggunakan Laravel Sanctum.
-- **Proteksi API dengan Bearer Token** untuk keamanan data.
-- **Tombol Logout** untuk keluar dari sesi.
+- Register & Login** menggunakan Laravel Sanctum.
+- Proteksi API dengan Bearer Token** untuk keamanan data.
+- Tombol Logout** untuk keluar dari sesi.
 
 Manajemen Diary
-- **Menambah** diary dengan input teks & gambar.
-- **Melihat daftar diary** yang sudah dibuat.
-- **Mengedit diary** dengan update teks & mengganti gambar.
-- **Menghapus diary** dengan modal konfirmasi.
+- Menambah diary dengan input teks & gambar.
+- Melihat daftar diary yang sudah dibuat.
+- Mengedit diary dengan update teks & mengganti gambar.
+- Menghapus diary dengan modal konfirmasi.
 
 Pencarian Kode Pos
-- **Menampilkan kode pos & alamat** dengan API ZipCloud.
-- **Fitur Auto Fill** untuk mencari alamat berdasarkan kode pos.
-- **Tombol Edit** untuk mengubah kode pos & alamat.
-- **Tombol Save** untuk menyimpan perubahan.
+- Menampilkan kode pos & alamat dengan API ZipCloud.
+- Fitur Auto Fill untuk mencari alamat berdasarkan kode pos.
+- Tombol Edit untuk mengubah kode pos & alamat.
+- Tombol Save untuk menyimpan perubahan.
 
 
 
 Cara Install & Menjalankan Proyek
 Clone Repository**
 bash
-git clone https://github.com/username/diary-app.git
-cd diary-app
+- git clone https://github.com/ipoelamri/diary-app-saiful
+- cd diary-app-saiful
 
 Setup Backend (Laravel)
 
+- Masuk ke folder Backend (diary)
+
 Install dependencies
-composer install
+- -composer install
 
 Buat file .env dan konfigurasi database
-cp .env.example .env
+- cp .env.example .env
 
 Atur koneksi database di .env:
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=diary_db
-DB_USERNAME=root
-DB_PASSWORD=
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=diary_db
+- DB_USERNAME=root
+- DB_PASSWORD=
 
 Generate key & jalankan migrasi database
-php artisan key:generate
-php artisan migrate
-php artisan storage:link
+- php artisan key:generate
+- php artisan migrate
+- php artisan storage:link
 
 Jalankan server Laravel
-php artisan serve
+- php artisan serve
 
 
 Setup Frontend (React.js)
 
-Masuk ke folder frontend
+- Masuk ke folder frontend (diary-frontend)
 
 Install dependencies
-npm install
+- npm install
 
 Jalankan frontend
-npm run dev
+- npm run dev
