@@ -32,7 +32,7 @@ export default function DiaryDetail() {
         <img
           src={`http://localhost:8000/storage/${diary.image}`}
           alt={diary.title}
-          className="w-full h-64 object-cover rounded-lg mb-4"
+          className="w-full h-full object-cover rounded-lg mb-4"
         />
       )}
       <p className="text-lg">{diary.detail}</p>

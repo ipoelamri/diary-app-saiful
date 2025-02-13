@@ -20,35 +20,35 @@ class DiaryController extends Controller
 
     public function store(Request $request)
     {
-        // Validasi request
+
         $request->validate([
             'date' => 'required|date',
             'title' => 'required|string',
             'detail' => 'required|string',
-            'image' => 'nullable|image|mimes:jpg,png,jpeg|max:2048', // Validasi gambar
+            'image' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
         ]);
 
-        // Cek apakah ada file gambar
         if ($request->hasFile('image')) {
-            // Simpan gambar ke storage dan ambil path-nya
-            $imagePath = $request->file('image')->store('diary_images', 'public'); // Simpan di storage/app/public/diary_images
+
+            $imagePath = $request->file('image')->store('diary_images', 'public');
         } else {
-            $imagePath = null; // Jika tidak ada gambar, set null
+            $imagePath = null;
         }
 
-        // Simpan data diary ke database
+
         $diary = Diary::create([
             'user_id' => auth()->id(),
             'date' => $request->date,
             'title' => $request->title,
             'detail' => $request->detail,
-            'image' => $imagePath, // Simpan path gambar di kolom image
+            'image' => $imagePath,
+            8888
         ]);
 
-        // Cek log jika gambar berhasil disimpan
+
         Log::info('Diary created with image:', ['image_path' => $imagePath]);
 
-        // Kembalikan response dengan URL gambar
+
         return response()->json([
             'diary' => [
                 'id' => $diary->id,
@@ -56,7 +56,7 @@ class DiaryController extends Controller
                 'date' => $diary->date,
                 'title' => $diary->title,
                 'detail' => $diary->detail,
-                'image' => $diary->image ? asset('storage/' . $diary->image) : null, // Menampilkan URL gambar
+                'image' => $diary->image ? asset('storage/' . $diary->image) : null,
                 'created_at' => $diary->created_at,
                 'updated_at' => $diary->updated_at,
             ]
